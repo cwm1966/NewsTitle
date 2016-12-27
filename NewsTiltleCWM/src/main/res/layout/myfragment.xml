@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:id="@+id/my_fragment"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/my_r"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#333333">
+
+
+
+                <LinearLayout
+
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_marginLeft="50dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weiboimage"
+                        android:src="@drawable/image_shape"
+                        android:background="@mipmap/sina_allshare_normal"/>
+                    <ImageView
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weixinimage"
+                        android:src="@drawable/image_shape"
+                        android:background="@mipmap/weixin_allshare_normal"/>
+                    <ImageView
+                        android:layout_marginLeft="40dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/qqimage"
+                        android:src="@drawable/image_shape"
+                        android:background="@mipmap/qqicon_login_profile_zc"/>
+
+                    />
+
+                </LinearLayout>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="登陆推荐更精准"
+                    android:layout_below="@id/line"
+                    android:id="@+id/my_t1"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#666666"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/r1"
+                android:layout_below="@id/my_r"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <LinearLayout
+                        android:gravity="center"
+                        android:id="@+id/bottom_line2"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/my_shoucang"
+                            android:background="@mipmap/favoriteicon_profile"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收藏"
+                            android:id="@+id/my_bottom_text1"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:id="@+id/bottom_line3"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/my_yejian"
+                            android:background="@mipmap/nighticon_profile"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="夜间"
+                            android:id="@+id/my_bottom_text2"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:gravity="center"
+                        android:id="@+id/bottom_line4"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/my_shezhi"
+                            android:background="@mipmap/wo2x"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="设置"
+                            android:id="@+id/my_bottom_text3"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/my_t2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#6666"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="40sp"
+                        android:id="@+id/my_message1"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:text="消息通知"/>
+
+                </LinearLayout>
+       <TextView
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="40sp"
+                        android:id="@+id/my_message2"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:text="活动"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="280dp"
+                        android:layout_height="40sp"
+                        android:id="@+id/my_message3"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:text="头条商城"/>
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/my_t3"
+                        android:textSize="12dp"
+                        android:text="特卖，电影"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="40sp"
+                        android:id="@+id/my_message4"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:text="京东特卖"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="40sp"
+                        android:id="@+id/my_message5"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:text="我要爆料"/>
+
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#000000"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="370dp"
+                        android:layout_height="40sp"
+                        android:id="@+id/my_message6"
+                        android:gravity="center_vertical"
+                        android:textSize="20sp"
+                        android:text="用户反馈"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
